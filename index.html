@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>::::  Sienna Syestems  ::::</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12">
+        <div id="signin" class="mt-5">
+            <div class="form-title">Sienna Systems</div>
+            <div class="input-field">
+                <input type="email" id="email" autocomplete="off" />
+                <i class="material-icons">email</i>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" />
+                <i class="material-icons">lock</i>
+                <label for="password">Password</label>
+            </div>
+            <a href="" class="forgot-pw">Forgot Password ?</a>
+            <button class="login">Login</button>
+        </div>
+  </div>
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $("input").on('focusout', function () {
+            $(this).each(function (i, e) {
+                if ($(e).val() != "") {
+                    $(e).addClass('not-empty');
+                } else {
+                    $(e).removeClass('not-empty');
+                }
+            });
+        });
+
+
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
